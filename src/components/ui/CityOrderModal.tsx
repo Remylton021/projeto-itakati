@@ -5,10 +5,10 @@ import { orderModalEvent } from "@/lib/events";
 import { Button } from "./Button";
 
 const locations = [
-  { city: "Tasso Fragoso", state: "MA", phone: "5599999999991" },
-  { city: "Alto Parnaíba", state: "MA", phone: "5599999999992" },
-  { city: "Baixa Grande do Ribeiro", state: "PI", phone: "5589999999993" },
-  { city: "Araguaína", state: "TO", phone: "5563999999994" },
+  { city: "Tasso Fragoso", state: "MA", phone: "5599984557356" },
+  { city: "Alto Parnaíba", state: "MA", phone: "5599999546157" },
+  { city: "Baixa Grande do Ribeiro", state: "PI", phone: "558981464756" },
+  { city: "Araguaína", state: "TO", phone: "5563992623270" },
 ];
 
 export function CityOrderModal() {
