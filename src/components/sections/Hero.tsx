@@ -20,7 +20,7 @@ export function Hero() {
       className="relative min-h-[100svh] flex items-center justify-center overflow-hidden bg-[#0A020B] pt-20"
     >
       {/* Background glow effects */}
-      <div className="absolute top-[-10%] right-[-10%] w-[70%] h-[80%] bg-[radial-gradient(circle,#4B0082_0%,rgba(75,0,130,0)_70%)] opacity-40 blur-[80px] pointer-events-none z-0" />
+      <div className="absolute top-[-10%] right-[-10%] w-[70%] h-[80%] bg-[radial-gradient(circle,#4B0082_0%,rgba(75,0,130,0)_70%)] opacity-40 blur-[40px] md:blur-[80px] pointer-events-none z-0" />
       
       <div className="container mx-auto px-6 max-w-7xl relative z-10 grid lg:grid-cols-2 gap-12 items-center">
         
@@ -104,7 +104,7 @@ export function Hero() {
               transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
               src={heroImage}
               alt="Açaí Itakati"
-              className="w-[70%] h-[70%] object-cover rounded-3xl shadow-2xl z-20 rotate-12 border border-white/10"
+              className="w-[70%] h-[70%] object-cover rounded-3xl shadow-2xl z-20 rotate-12 border border-white/10 will-change-transform"
             />
           </motion.div>
 
@@ -115,7 +115,7 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.8 }}
             style={{ y: useTransform(scrollYProgress, [0, 1], [0, -100]) }}
             src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=200&q=80"
-            className="absolute top-20 right-0 w-32 h-32 rounded-full object-cover shadow-xl z-10 border-2 border-white/20"
+            className="absolute top-20 right-0 w-32 h-32 rounded-full object-cover shadow-xl z-10 border-2 border-white/20 will-change-transform"
             alt="Banana"
           />
         </motion.div>

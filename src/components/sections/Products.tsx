@@ -103,12 +103,13 @@ function ProductCard({ product, index }: { product: any, index: number }) {
       className="group relative rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 p-6 sm:p-8 flex flex-col items-start shadow-xl backdrop-blur-sm hover:bg-white/10 transition-all duration-500"
     >
       <div className="w-full relative h-[300px] mb-8 rounded-[1.5rem] overflow-hidden">
-        <div className={`absolute inset-0 bg-gradient-to-br ${product.color} opacity-10 group-hover:opacity-20 transition-opacity duration-500 z-10 mix-blend-overlay pointer-events-none`} />
+        <div className={`absolute inset-0 bg-gradient-to-br ${product.color} opacity-20 group-hover:opacity-30 transition-opacity duration-500 z-10 pointer-events-none`} />
         <motion.img 
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.6 }}
           src={product.image} 
           alt={product.title}
+          loading="lazy"
           className="w-full h-full object-cover transition-all duration-500"
         />
         <div className="absolute top-4 left-4 z-20">

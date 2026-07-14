@@ -17,7 +17,7 @@ function CupModel() {
       {/* --- Main Cup Body --- */}
       <mesh castShadow receiveShadow position={[0, 0, 0]}>
         {/* Tapered cylinder: top radius, bottom radius, height, radial segments */}
-        <cylinderGeometry args={[1.4, 1.1, 3, 64]} />
+        <cylinderGeometry args={[1.4, 1.1, 3, 32]} />
         <meshStandardMaterial 
           color="#f4f4f5" 
           roughness={0.7} 
@@ -27,13 +27,13 @@ function CupModel() {
       
       {/* Top Green Band */}
       <mesh position={[0, 1.25, 0]}>
-        <cylinderGeometry args={[1.41, 1.38, 0.25, 64]} />
+        <cylinderGeometry args={[1.41, 1.38, 0.25, 32]} />
         <meshStandardMaterial color="#217937" roughness={0.5} />
       </mesh>
       
       {/* Bottom Green Band */}
       <mesh position={[0, -1.25, 0]}>
-        <cylinderGeometry args={[1.14, 1.11, 0.25, 64]} />
+        <cylinderGeometry args={[1.14, 1.11, 0.25, 32]} />
         <meshStandardMaterial color="#217937" roughness={0.5} />
       </mesh>
 
@@ -118,7 +118,7 @@ function CupModel() {
 export function Cup3D() {
   return (
     <div className="w-full h-full min-h-[500px]">
-      <Canvas camera={{ position: [0, 1.5, 7], fov: 45 }} shadows>
+      <Canvas camera={{ position: [0, 1.5, 7], fov: 45 }} shadows dpr={[1, 1.5]}>
         <ambientLight intensity={0.6} />
         <spotLight 
           position={[5, 10, 5]} 

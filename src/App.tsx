@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 
 export default function App() {
   return (
-    <main className="bg-[#0A020B] min-h-screen text-white overflow-hidden">
+    <main className="bg-[#0A020B] min-h-screen text-white overflow-x-hidden">
       <Navbar />
       <Hero />
       <Products />
