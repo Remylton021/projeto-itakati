@@ -35,7 +35,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
-          <span className="font-sans font-black text-2xl tracking-tighter text-white uppercase">
+          <span className="font-sans font-black text-2xl tracking-tighter text-purple-500 uppercase [text-shadow:0_0_15px_rgba(168,85,247,0.8)] transition-all duration-300">
             ITAKATI
           </span>
         </a>
